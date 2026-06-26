@@ -1,0 +1,20 @@
+{
+    "46282128": {
+        "nombre": "lautaro",
+        "apellido": "vallejos",
+        "edad": 21,
+        "nota": 7.0
+    },
+    "34479911": {
+        "nombre": "mariano",
+        "apellido": "villaroel",
+        "edad": 38,
+        "nota": 6.0
+    },
+    "17346793": {
+        "nombre": "alicia",
+        "apellido": "lizarraga",
+        "edad": 62,
+        "nota": 5.0
+    }
+}
