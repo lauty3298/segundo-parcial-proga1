@@ -25,10 +25,10 @@ def menu():
         match opcion:
             case 1:
                 while ban == 1:
-                    dni = int(input("\ndame el dni del alumno: "))
+                    dni = int(input("\ndame el dni del alumno: ")) 
 
-                    if 9999999 < dni < 900000000:
-                        dni = str(dni)
+                    if 9999999 < dni < 900000000: #por aca si el dni no coincide con los 8 digitos debe intentarlo de nuevo
+                        dni = str(dni) #lo paso como str para que si ya existe el dni lo reconozca y te diga que ya existe
                         meter_alumno(dni)
                         break
 
@@ -38,7 +38,8 @@ def menu():
             case 2:
                 alumnos = leer_json()
 
-                for dni, datos in alumnos.items():
+                for dni, datos in alumnos.items(): #aca simplemente lee el json con toda la info
+                    print("-" * 20)
                     print(f"DNI: {dni}")
                     print(f"Nombre: {datos['nombre']}")
                     print(f"Apellido: {datos['apellido']}")

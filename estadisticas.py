@@ -6,17 +6,16 @@ def stats_alumno():
 
     promedio = 0
     mejor_nota = 0
-    mejor_alumno = ""
     aprobados = 0
 
-    for dni, datos in alumnos.items():
-        promedio += datos["nota"]
+    for dni, datos in alumnos.items(): #aca recorremos el diccionario:
+        promedio += datos["nota"] #la suma de todas las notas para sacar un promedio
 
-        if mejor_nota < datos["nota"]:
-            mejor_nota = datos["nota"]
-            mejor_alumno = datos["nombre"]
+        if mejor_nota < datos["nota"]: 
+            mejor_nota = datos["nota"] #quien tiene la mejor
+            mejor_alumno = datos["nombre"] #y quien es, si para el ejemplo salgo yo fue sin querer queriendo
         
-        if datos["nota"] <= 6:
+        if datos["nota"] <= 6: #si la nota supera o es igual a 6 aprueban
             aprobados += 1
      
     print(f"\ntenemos {len(alumnos)} alumnos.")

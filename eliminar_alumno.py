@@ -4,9 +4,9 @@ def del_alumno(dni):
 
     alumnos = leer_json()
 
-    if dni in alumnos:
+    if dni in alumnos: 
        
-        alumnos.pop(dni)
+        alumnos.pop(dni) #aca el alumno hace pop y desaparece
 
         modificar_json(alumnos)
 
