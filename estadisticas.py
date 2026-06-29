@@ -10,6 +10,8 @@ def stats_alumno():
 
     for dni in alumnos: #aca recorremos el diccionario:
         datos = alumnos[dni] #la suma de todas las notas para sacar un promedio
+
+        promedio += datos["nota"]
         
         if mejor_nota < datos["nota"]: 
             mejor_nota = datos["nota"] #quien tiene la mejor

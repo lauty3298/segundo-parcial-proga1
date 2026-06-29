@@ -6,7 +6,7 @@ def meter_alumno(dni):
 
     if dni in alumnos:
         print("el alumno ya existe. \n")
-    
+
     else:
         alumnos[dni] = {
             "nombre": input("Nombre: "),

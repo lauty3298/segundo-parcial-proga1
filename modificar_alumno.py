@@ -20,3 +20,4 @@ def mod_alumno(dni):
 
     else:
         print("No se encontró el alumno")
+
