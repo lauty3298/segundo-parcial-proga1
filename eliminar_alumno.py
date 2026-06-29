@@ -12,7 +12,7 @@ def del_alumno(dni):
 
         print("Alumno eliminado correctamente.\n")
 
-        return
+        return 
 
     else:
         print("No se encontró el alumno")

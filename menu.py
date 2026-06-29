@@ -38,13 +38,14 @@ def menu():
             case 2:
                 alumnos = leer_json()
 
-                for dni, datos in alumnos.items(): #aca simplemente lee el json con toda la info
+                for dni in alumnos: #aca simplemente lee el json con toda la info
+                    datos = alumnos[dni]
                     print("-" * 20)
                     print(f"DNI: {dni}")
-                    print(f"Nombre: {datos['nombre']}")
-                    print(f"Apellido: {datos['apellido']}")
-                    print(f"Edad: {datos['edad']}")
-                    print(f"Nota: {datos['nota']}")
+                    print(f"Nombre: {datos["nombre"]}")
+                    print(f"Apellido: {datos["apellido"]}")
+                    print(f"Edad: {datos["edad"]}")
+                    print(f"Nota: {datos["nota"]}")
                     print("-" * 20)
 
             case 3:
@@ -59,6 +60,5 @@ def menu():
             case 6:
                 stats_alumno()
             case 7:
-
                 print("\nadios")
                 return

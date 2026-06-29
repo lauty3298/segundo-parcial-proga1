@@ -16,5 +16,11 @@
         "apellido": "lizarraga",
         "edad": 62,
         "nota": 5.0
+    },
+    "12344312": {
+        "nombre": "eduardo",
+        "apellido": "gutierrez",
+        "edad": 34,
+        "nota": 8.0
     }
 }
