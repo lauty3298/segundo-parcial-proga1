@@ -9,13 +9,13 @@ def buscar(dni):
 
         print("-" * 20)
         print(f"DNI: {dni}")
-        print(f"Nombre: {datos['nombre']}")
-        print(f"Apellido: {datos['apellido']}")
-        print(f"Edad: {datos['edad']}")
-        print(f"Nota: {datos['nota']}")
+        print(f"Nombre: {datos["nombre"]}")
+        print(f"Apellido: {datos["apellido"]}")
+        print(f"Edad: {datos["edad"]}")
+        print(f"Nota: {datos["nota"]}")
         print("-" * 20)
 
     else:
-        print("No se encontró el alumno")
+        print(">>> No se encontró el alumno")
 
         

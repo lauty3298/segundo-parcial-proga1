@@ -28,7 +28,7 @@ def menu():
                     dni = int(input("\ndame el dni del alumno: ")) 
 
                     if 9999999 < dni < 900000000: #por aca si el dni no coincide con los 8 digitos debe intentarlo de nuevo
-                        dni = str(dni) #lo paso como str para que si ya existe el dni lo reconozca y te diga que ya existe
+                        dni = str(dni)            #lo paso como str para que si ya existe el dni lo reconozca y te diga que ya existe
                         meter_alumno(dni)
                         break
 
