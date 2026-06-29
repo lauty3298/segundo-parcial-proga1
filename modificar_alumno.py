@@ -14,7 +14,7 @@ def mod_alumno(dni):
 
         modificar_json(alumnos)
 
-        print("Alumno agregado correctamente.\n")
+        print("Alumno modificado correctamente.\n")
 
         return
 
