@@ -17,7 +17,7 @@ def stats_alumno():
             mejor_nota = datos["nota"] #quien tiene la mejor
             mejor_alumno = datos["nombre"] #y quien es, si para el ejemplo salgo yo fue sin querer queriendo
         
-        if datos["nota"] <= 6: #si la nota supera o es igual a 6 aprueban
+        if datos["nota"] >= 7: #si la nota supera o es igual a 7 aprueban
             aprobados += 1
      
     print(f"\ntenemos {len(alumnos)} alumnos.")
